@@ -1,0 +1,52 @@
+Chapter 2: Lexical Structure 
+============================ 
+
+The lexical structure of a programming language is a set of 
+elmentary rules that specifies how you write programs in that language. 
+It is the lowerst-level syntax of a language: it specifies what variable 
+names look like, the delimiter characters for comments, 
+and how one program statement is separated from the enxt, fro example. 
+This shoer chapter documents the lexical structure of JavaSCript. 
+
+# Topics Covered 
+1. Case sensitivity, spaces, and line breaks 
+2. Comments 
+3. Literals 
+4. Identifiers and reserved words 
+5. Unicode 
+7. Optional semicolons 
+
+# The Text of a JavaScript Program 
+JavaScript is a case-sensitive language. The language keywords, variables, 
+function names, and other identifiers must always be typed with a consistent 
+capitalization of letters. The while keyword, for example, must be typed 
+"while" and not "While" or "WHILE." Similarly, online, Online, OnLine, and 
+ONLINE are four distinct variable names. 
+
+JavaScript ignores spaces that appear between tokens(?) in programs. 
+For the most part, JS also ignores line breaks, but there are some exceptions. 
+Because you can use spaces newlines freely in your programs, you can format 
+and indent your programs in aneat and consistent way that makes the code easy 
+to read and understand. 
+
+## Ignored by JS 
+1. Regular Space Character (\u0020) 
+2. Tabs 
+3. Assorted ASCII control characters 
+4. Various Unicode space characters as white space. 
+5. Newlines 
+6. Carriage return/line feed sequence as line terminators. 
+
+Some of these may seem strange at this point, but we will understand these in 
+due time. There are exceptions to these ignoring rules too. And those must be 
+managed carefully. 
+
+## Comments
+JavaScript supports two styles of comments. Anny text between a // and a new line 
+is treated as a single-line comment and is ignored by JS. 
+
+Any text between /* and */ is also ignored, even as multi-line comment. 
+
+You may put as many comments in your code as your like. Sometimes I like to 
+put quotes from famous people in my comments. 
+
