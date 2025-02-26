@@ -1,3 +1,6 @@
+Chapter 1: Introduction to JavaScript
+=====================================
+
 # Getting Started 
 The best way to learn JavaScript is to practice it, 
 read up resources, and play with your coding skills.
