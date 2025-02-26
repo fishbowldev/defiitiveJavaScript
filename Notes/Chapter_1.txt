@@ -1,0 +1,231 @@
+# Getting Started 
+The best way to learn JavaScript is to practice it, 
+read up resources, and play with your coding skills.
+
+You can start by downlaoding Node from nodejs.org.
+
+# Hello World 
+When you want to start coding, first make a file with 
+the extension *.js which is the traditional JavaScript 
+code. To run a JavaScript code use the following commmand 
+in the window where yourcode.js file is located. 
+
+>> node yourcode.js 
+
+If your code contains the statement 
+> console.log("Hello World!"); 
+It will print "Hello World!" in your terminal window. 
+Do notice the semicolon ; at the end of the 'statement'
+
+Each web browser also has a console where the command 
+> console.log()
+logs the output, so you can, in due time, embedd yourcode.js 
+into a web browser HTML file and see the output "Hellow World!" 
+there as well.
+
+# Touring JavaScript 
+We will cover some examples of JavaScript code to get familiar 
+with the way it looks and feels. Thenafter, we will explore 
+the language from the very basics and build on to the goal of 
+this endeavour, to gain a definitive understanding of JavaScript.
+
+## Note on Notation
+Anything that follows: 
+    double slash // is a comment 
+    single brace > is an inline code snippet 
+    double brace >> is a separate code snippet
+    tilde ~ is an output of a code snippet
+
+Also anything between /* and */ is a multiline comment. 
+
+For longer code snippets I have enclosed the code between 
+backticks:
+
+'
+long code snippet
+
+'
+
+## Variables in JavaScript
+The keywords let and var define a variable: 
+
+>> let x; 
+>> var x; 
+
+To assign a value to a variable the assignment operator = is used 
+
+>> let x = 5;       // integer type variable 
+>> var x = 3.7;     // float type variable 
+
+Note: The types of variable will be covered in detail later. 
+
+Since JavaScript is loosely typed, we can define a variable 
+on the go without using the let and var keywords. 
+
+>> x = 5;           // Defines a integer variable x with value 5 
+
+Besides numbers, integers and decimals, flaots, one can define 
+strings, boolean values (treu and false) and null and undefined too. 
+
+If no value is assigned, the value of variable is undefined 
+by default. 
+
+>> let x;           // value of x is undefined 
+
+>> console.log(x); 
+~ undefined       // another way to say this is x => undefined 
+
+## Types of Variables in JavaScript 
+
+>> let x;           // undefined type 
+>> let x = null;    // null type 
+>> let x = 5;       // integer type 
+>> let x = 3.9;     // float or decimal type 
+>> let x = 'JS'     // string type 
+>> let x = "JS"     // also string type 
+
+
+## Misc Types of Variables
+Some other type of variables types like objects and arrays also exist. 
+We will cover those in later chapters. Here are an example of an object book: 
+
+`
+ let book = {
+    topic: "definitiveJavaScript",
+    edition: 0
+  }
+
+`
+Once you define an array, you can access it's properties:
+
+>> console.log(book.topic); 
+~ definitiveJavaScript 
+
+>> console.log(book["edition"]); 
+~ 0 
+
+Let us look at an example of an array as well, which is 
+an indexed list of objects or numbers in the following example: 
+
+>> let primes = [2,3,5,7]; 
+>> console.log(primes[0]); 
+~ 2 
+
+You can do more with arrays, and we will learn these in detail in later chapters. 
+Two examples are shown below: 
+
+>> let primes = [2,3,4,5]; 
+>> console.log(primes[0]); 
+~ 2 
+>>console.log(primes[primes.length-1]); 
+~ 5 
+
+One good thing about arrays is that arrays can hold all kinds of objects, 
+including arrays themselves. Similaryly objects are also versatile, and 
+can hold other datatypes, arrays, and objects too. 
+
+## Expressions in JavaScript
+Expressions in JS are phrases that can be evaluated to produce a value. 
+We use console.log() function to display the value returned by an expression, 
+or a function, which prints the output to the console. 
+
+### Common Expressions Use Operators 
+Operators such as 
+    * multiply 
+    + add (or concatenate) 
+    - subtract 
+    / divide 
+
+An Example is shown below: 
+>> console.log(2*5 + 4/2)
+~ 12
+
+### Shorthand Expressions
+
+>> let x = 5;           // define a variable 5 
+>> console.log(x++);    // returns first and then increases value of x 
+~ 5 
+>> console.log(x);      // since the value was increased, it is 6 now 
+~ 6 
+>> console.log(++x);    // increases value of x first and then returns it
+~ 7 
+>> x += 2;              // Increases value of x by 2 
+>> console.log(x); 
+~ 9
+
+Similarly, you have the following operators too: 
+    x--                 // returns value than decreases it
+    --x                 // decreases value than returns it
+    *=                  // multiplies variable by a number
+    **                  // power operator
+
+### Relational Operators
+Relational operators compare the values of two objects or data types. 
+Here is a list of useful operators followed by some examples: 
+
+    === 
+    !== 
+    < 
+    > 
+    <= 
+    >= 
+
+>> let x =2, y = 3; 
+>> console.log(x===3); 
+~ false 
+>> console.log(x<3); 
+~ true 
+>> console.log(y>=x); 
+~ true  
+>> console.log("two"==="three"); 
+~ false
+
+### Logical Operators
+These are fairly common in most high-level programming languages 
+such as JavaScript itself. 
+
+    &&          \\ AND operator: Checks of two expression are both true 
+    ||          \\ OR operator: Checks if one of the two expression is true 
+    !           \\ NOT operator: negates the logic of each statement 
+
+Here is an example: 
+
+>> let x = 2, y = 3;
+>>console.log((x===2)&&(y===3));
+~ true
+
+Note: JavaScript statements and expression are different. Expressions are 
+like building blocks of a statement, but we will come to that later. 
+
+## Functions in JavaScript
+As a first introduction, functions are reusable blocks of code that can be 
+programmed to take input, process it, and provide output. The following 
+function adds one to the input x: 
+
+`
+function plus1 (x) {
+    return x + 1;
+}
+
+`
+
+The same function, may also be written as 
+
+>> const plus1 = x => x +1;
+
+Using => is invoking arrow functions, a concise way to make your code work and look great too, for the added style element. 
+
+### What are Methods
+Methods are functions applied on objects. Each object in JavaScript comes with 
+its own methods, but these can be user defined as well. More about this later :)
+
+## Object Orienting Programming
+One of the reasons for JavaScript to be so famous is it's ability to work with 
+classes, user defined (or default) objects with methods, but they are so much 
+more capable than this, as we will find out in later chapters. 
+
+You will also come across the new keyword which is used to create an instance 
+or to instantiate a new class object. 
+
+Like functions, classes are also reusable 'structure' of code that can be 
+instantiated as many times as required. 
