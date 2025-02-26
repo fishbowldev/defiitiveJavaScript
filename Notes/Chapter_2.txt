@@ -50,3 +50,30 @@ Any text between /* and */ is also ignored, even as multi-line comment.
 You may put as many comments in your code as your like. Sometimes I like to 
 put quotes from famous people in my comments. 
 
+## Literals 
+A literal is a data value that appears directly in a rogram. The following are 
+all literals: 
+
+    12              // The number 12 
+    1.2             // The decimal 1-point-2 
+    "hello world"   // A string of text 
+    true            // A boolean value 
+    false           // The other boolean value 
+    null            // Absence of an object 
+    undefined       // When variables are not assigned 
+
+We will discuss more about literals in later chapters. 
+
+## Identifiers and Reserved Words
+An identifier is simply a name. In JavaScript, identifiers are used to name constants, 
+variables, properties, functions, and classes and to provide labels for cetain loops 
+in JS code. 
+
+### Rules for Identifiers 
+1. Must begin with a letter or underscore _ or dollar sign $ 
+2. Subsequent characters can be letter, digits, underscores, or dollar signs 
+3. Other than the dollar sign $, no other special character is used 
+
+Note: Digits are not allowed as first character of an identifier. 
+
+### Reserved Words 
